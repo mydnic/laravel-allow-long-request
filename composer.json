@@ -1,6 +1,6 @@
 {
     "name": "mydnic/laravel-allow-long-request",
-    "description": "Simple Middleware Allowing Long Request",
+    "description": "Simple Middleware Allowing Long Requests",
     "keywords": [
         "laravel",
         "allow",
@@ -26,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Mydnic\\AllowLongRequest\\": "src/"
+            "Mydnic\\AllowLongRequests\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mydnic\\AllowLongRequest\\Test\\": "tests"
+            "Mydnic\\AllowLongRequests\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mydnic\\AllowLongRequest\\AllowLongRequestServiceProvider"
+                "Mydnic\\AllowLongRequests\\AllowLongRequestsServiceProvider"
             ]
         }
     },
