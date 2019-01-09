@@ -1,13 +1,14 @@
 {
     "name": "mydnic/laravel-allow-long-request",
-    "description": "Open Source Feedback Interface for Laravel",
+    "description": "Simple Middleware Allowing Long Request",
     "keywords": [
         "laravel",
-        "customer",
-        "feedback"
+        "allow",
+        "long",
+        "request"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/mydnic/laravel-kustomer",
+    "homepage": "https://github.com/mydnic/laravel-allow-long-request",
     "authors": [
         {
             "name": "Clément Rigo",
@@ -25,18 +26,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Mydnic\\Kustomer\\": "src/"
+            "Mydnic\\AllowLongRequest\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mydnic\\Kustomer\\Test\\": "tests"
+            "Mydnic\\AllowLongRequest\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mydnic\\Kustomer\\KustomerServiceProvider"
+                "Mydnic\\AllowLongRequest\\AllowLongRequestServiceProvider"
             ]
         }
     },
