@@ -14,16 +14,6 @@ class AllowLongRequestsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerPublishing();
-    }
-
-    /**
-     * Register the package's publishable resources.
-     *
-     * @return void
-     */
-    protected function registerPublishing()
-    {
         $this->publishes([
             __DIR__ . '/../config/allow-long-requests.php' => config_path('allow-long-requests.php'),
         ], 'config');

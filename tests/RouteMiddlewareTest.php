@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\Http\Middleware\VerifyCsrfToken;
+use Symfony\Component\Debug\Exception\FatalErrorException;
 use Mydnic\AllowLongRequests\Http\Middleware\AllowLongRequests;
 
 class RouteMiddlewareTest extends TestCase
@@ -14,25 +15,24 @@ class RouteMiddlewareTest extends TestCase
     {
         parent::setUp();
 
-        \Route::middleware('allow-long-requests')->any('/_test', function () {
-            sleep(100);
-            return 'OK';
+        \Route::middleware(AllowLongRequests::class)->any('/_test', function () {
+            return ini_get('max_execution_time');
         });
     }
 
-    // /** @test */
-    // public function it_allows_long_request_with_middleware()
-    // {
-    //     config()->set('allow-long-request.wait', 200);
-
-    //     $this->get('/_test');
-    // }
-
     /** @test */
-    public function it_doesnt_allow_long_request_without_middleware()
+    public function it_updates_the_wait_time_from_config()
     {
         config()->set('allow-long-requests.wait', 5);
 
-        $this->get('/_test');
+        $response = $this->get('/_test');
+        $this->assertEquals($response->original, 5);
+    }
+
+    /** @test */
+    public function it_uses_default_value_from_config()
+    {
+        $response = $this->get('/_test');
+        $this->assertEquals($response->original, 300);
     }
 }
