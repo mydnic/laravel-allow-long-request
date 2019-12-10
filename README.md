@@ -31,3 +31,13 @@ protected $routeMiddleware = [
     'allow-long-request' => \Mydnic\AllowLongRequests\Http\Middleware\AllowLongRequests::class,
 ]
 ```
+
+Now you can apply the middleware on the route of your choice
+
+```php
+Route::get('/', function () {
+    // code that takes a long time to execute
+})->middleware('allow-long-request');
+```
+
+You can set the max waiting time in the config file.
