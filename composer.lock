@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "962b427654eed705342d544cbeb05213",
+    "content-hash": "c79be1ff651e1cff32c8ed5d603acaa1",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1714,17 +1714,17 @@
             ],
             "authors": [
                 {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                },
+                {
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
                 {
                     "name": "Thibaud Fabre",
                     "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
                 }
             ],
             "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
@@ -3233,16 +3233,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.8.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
                 "shasum": ""
             },
             "require": {
@@ -3251,12 +3251,12 @@
             "require-dev": {
                 "ext-intl": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^1.5"
+                "squizlabs/php_codesniffer": "^2.9.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.8-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -3279,7 +3279,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2018-07-12T10:23:15+00:00"
+            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -3444,16 +3444,16 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v3.7.7",
+            "version": "v3.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "0715465a6f921e1da61f28cb5b310cbbaa3c92bf"
+                "reference": "43588b01b316dc6e5cabd726e1cd9ced7babf37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/0715465a6f921e1da61f28cb5b310cbbaa3c92bf",
-                "reference": "0715465a6f921e1da61f28cb5b310cbbaa3c92bf",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/43588b01b316dc6e5cabd726e1cd9ced7babf37a",
+                "reference": "43588b01b316dc6e5cabd726e1cd9ced7babf37a",
                 "shasum": ""
             },
             "require": {
@@ -3490,20 +3490,20 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-03-16T07:03:42+00:00"
+            "time": "2020-04-27T09:39:51+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v3.7.8",
+            "version": "v3.7.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "11b9043c243ee95018bc24d70ea555c087d1559c"
+                "reference": "dd61b35b36f788b6bd20bb1827cd17f128364847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/11b9043c243ee95018bc24d70ea555c087d1559c",
-                "reference": "11b9043c243ee95018bc24d70ea555c087d1559c",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/dd61b35b36f788b6bd20bb1827cd17f128364847",
+                "reference": "dd61b35b36f788b6bd20bb1827cd17f128364847",
                 "shasum": ""
             },
             "require": {
@@ -3555,7 +3555,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-03-16T06:55:15+00:00"
+            "time": "2019-12-10T01:27:25+00:00"
         },
         {
             "name": "phar-io/manifest",
